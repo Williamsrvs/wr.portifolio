@@ -48,15 +48,6 @@ pagina = st.sidebar.selectbox(
      'Análise Financeira - Manutenção','______Python_______','Analise Dados','______Microsoft Excel_______','Aulas e Consultoria','Analise Dados e Dashboards','______Microsoft Access_______','Fale Conosco']
 )
 
-# Adicionar calendário abaixo do selectbox
-data_selecionada = st.sidebar.date_input('Selecione uma data')
-
-# Formatar a data selecionada em Português do Brasil
-data_formatada = format_date(data_selecionada, format='long', locale='pt_BR')
-
-# Exibir a data formatada
-st.sidebar.write('Data selecionada:', data_formatada)
-
 # Campo de texto para entrada do destino
 destino = st.sidebar.text_input('Selecione um destino')
 
