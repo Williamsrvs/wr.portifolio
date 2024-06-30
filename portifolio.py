@@ -56,7 +56,7 @@ if numero_zap:
 # Condicional para exibir conteúdo com base na seleção do usuário
 roteirizacao = "https://app.powerbi.com/view?r=eyJrIjoiZGYyYzcwMDYtYzZmZC00YjlhLWJjYzQtYmE4MmMyOTc5MTdmIiwidCI6ImY1OGYxNjE2LWZkYWEtNGRhZS1hN2ZjLTc1ODI5YzkxOWE2YSJ9"
 Url_Form_contato = "https://forms.gle/KxkxER6rRhgAmmxMA"
-combustivel = "https://app.powerbi.com/view?r=eyJrIjoiODkzNmZmY2ItNTVhYy00ZTEwLWJkYTMtZTJjNjZlNzE1NzgzIiwidCI6ImFiNWQ1NWI3LWU3ZWYtNDM1ZS04NTAwLWJjOWY0NTE1ZTU2MiJ9"
+combustivel = "https://app.powerbi.com/view?r=eyJrIjoiNjE2ZTRlMTItYTJiYS00MmI3LWJjYzktMjdjMjA0NDlhNmI5IiwidCI6ImY1OGYxNjE2LWZkYWEtNGRhZS1hN2ZjLTc1ODI5YzkxOWE2YSJ9"
 
 if pagina == 'Página Principal':
     st.markdown("""
