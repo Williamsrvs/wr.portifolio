@@ -9,12 +9,7 @@ import altair as alt
 
 
 # Definir localidade para Português do Brasil
-import locale
-
-try:
-    locale.setlocale(locale.LC_ALL, 'pt_BR.UTF-8')
-except locale.Error:
-    locale.setlocale(locale.LC_ALL, '')
+locale.setlocale(locale.LC_ALL, 'pt_BR.UTF-8')
 
 # Incluir a logo acima do menu de navegação lateral
 st.image("baner.png", use_column_width=True)
