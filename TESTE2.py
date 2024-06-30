@@ -2,9 +2,6 @@ import streamlit as st
 from datetime import datetime
 from babel.dates import format_date
 import pandas as pd
-from geopy.geocoders import Nominatim
-from geopy.exc import GeocoderServiceError
-import altair as alt
 
 # Incluir a logo acima do menu de navegação lateral
 st.image("baner.png", use_column_width=True)
@@ -47,20 +44,9 @@ pagina = st.sidebar.selectbox(
      'Análise Financeira - Manutenção','______Python_______','Analise Dados','______Microsoft Excel_______','Aulas e Consultoria','Analise Dados e Dashboards','______Microsoft Access_______','Fale Conosco']
 )
 
-# Adicionar calendário abaixo do selectbox
-data_selecionada = st.sidebar.date_input('Selecione uma data')
-
-# Formatar a data selecionada em Português do Brasil
-data_formatada = format_date(data_selecionada, format='long', locale='pt_BR')
-
-# Exibir a data formatada
-st.sidebar.write('Data selecionada:', data_formatada)
-
-# Campo de texto para entrada do destino
-destino = st.sidebar.text_input('Selecione um destino')
 
 # Campo de texto para entrada do número de WhatsApp
-numero_zap = st.sidebar.text_input('Digite o número WhatsApp (com código do país, ex: 5582999999999)')
+numero_zap = st.sidebar.text_input('converta um número WhatsApp (com código do país, ex: 5582999999999)')
 
 # Converter o número em link do WhatsApp
 if numero_zap:
@@ -104,31 +90,9 @@ elif pagina == 'Análise Financeira - Manutenção':
 
 elif pagina == 'Analise Dados':
     st.title('Análise de Dados')
-    uploaded_file = st.file_uploader("Selecione seu arquivo XLSX ou CSV", type=['xlsx', 'csv'])
+    st.title('ESTAMOS EM MANUTENÇÃO')
     
-    if uploaded_file is not None:
-        # Carrega os dados do arquivo
-        df = __loader__(uploaded_file)
-        
-        # Verifica se o dataframe não está vazio
-        if df is not None:
-            st.subheader('Dados Importados:')
-            st.write(df.head())  # Exibe os primeiros registros do dataframe
-            
-            # Exemplo de criação de gráfico usando Altair
-            st.subheader('Gráfico de Exemplo:')
-            chart = alt.Chart(df).mark_bar().encode(
-                x='Year:O',
-                y='value:Q',
-                color='category:N'
-            ).properties(
-                width=600,
-                height=400
-            )
-            st.altair_chart(chart, use_container_width=True)
-        else:
-            st.error('Erro ao carregar o arquivo. Verifique o tipo de arquivo selecionado.')
-
+    
 elif pagina == 'Fale Conosco':
     st.title('Saiba mais sobre nossos serviços ou solicite uma proposta agora mesmo')
     st.markdown(f'<iframe width="800" height="600" src="{Url_Form_contato}" frameborder="0" allowfullscreen></iframe>', unsafe_allow_html=True)
