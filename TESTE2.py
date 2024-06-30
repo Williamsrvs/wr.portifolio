@@ -6,7 +6,6 @@ from geopy.geocoders import Nominatim
 from geopy.exc import GeocoderServiceError
 import altair as alt
 
-
 # Incluir a logo acima do menu de navegação lateral
 st.image("baner.png", use_column_width=True)
 
@@ -47,6 +46,15 @@ pagina = st.sidebar.selectbox(
     ['Selecione uma opção','_____Power BI______','Página Principal', 'Análise Roteirização', 'Análise Combustível',
      'Análise Financeira - Manutenção','______Python_______','Analise Dados','______Microsoft Excel_______','Aulas e Consultoria','Analise Dados e Dashboards','______Microsoft Access_______','Fale Conosco']
 )
+
+# Adicionar calendário abaixo do selectbox
+data_selecionada = st.sidebar.date_input('Selecione uma data')
+
+# Formatar a data selecionada em Português do Brasil
+data_formatada = format_date(data_selecionada, format='long', locale='pt_BR')
+
+# Exibir a data formatada
+st.sidebar.write('Data selecionada:', data_formatada)
 
 # Campo de texto para entrada do destino
 destino = st.sidebar.text_input('Selecione um destino')
@@ -124,3 +132,4 @@ elif pagina == 'Analise Dados':
 elif pagina == 'Fale Conosco':
     st.title('Saiba mais sobre nossos serviços ou solicite uma proposta agora mesmo')
     st.markdown(f'<iframe width="800" height="600" src="{Url_Form_contato}" frameborder="0" allowfullscreen></iframe>', unsafe_allow_html=True)
+

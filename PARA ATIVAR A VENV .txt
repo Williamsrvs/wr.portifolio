@@ -1,0 +1,14 @@
+PARA ATIVAR A VENV 
+
+1 python -m venv venv
+
+2 Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
+
+3 .\venv\Scripts\Activate.ps1
+
+4 STEPS by Anno Domini Beats.
+
+5 Para acessar o GitHub do Canal:
+
+https://github.com/andrebr45
+#Python #AmbienteVirtual #Programação #vscode
