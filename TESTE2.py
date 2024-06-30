@@ -1,7 +1,6 @@
 import streamlit as st
 from datetime import datetime
 from babel.dates import format_date
-import locale
 import pandas as pd
 from geopy.geocoders import Nominatim
 from geopy.exc import GeocoderServiceError
