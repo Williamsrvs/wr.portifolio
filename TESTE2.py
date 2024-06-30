@@ -8,9 +8,6 @@ from geopy.exc import GeocoderServiceError
 import altair as alt
 
 
-# Definir localidade para Português do Brasil
-locale.setlocale(locale.LC_ALL, 'pt_BR.UTF-8')
-
 # Incluir a logo acima do menu de navegação lateral
 st.image("baner.png", use_column_width=True)
 
@@ -63,25 +60,6 @@ st.sidebar.write('Data selecionada:', data_formatada)
 
 # Campo de texto para entrada do destino
 destino = st.sidebar.text_input('Selecione um destino')
-
-# Geocodificação para converter o destino em coordenadas
-if destino:
-    geolocator = Nominatim(user_agent="myGeocoder")
-    try:
-        location = geolocator.geocode(destino)
-        if location:
-            map_data = pd.DataFrame({
-                'lat': [location.latitude],
-                'lon': [location.longitude]
-            })
-            st.sidebar.write(f"Coordenadas de {destino}: {location.latitude}, {location.longitude}")
-            st.map(map_data)
-        else:
-            st.sidebar.write("Destino não encontrado")
-    except GeocoderServiceErroraaa as e:
-        st.sidebar.write(f"Erro ao buscar o destino: {e}")
-else:
-    st.sidebar.write("Insira um destino para visualizar no mapa")
 
 # Campo de texto para entrada do número de WhatsApp
 numero_zap = st.sidebar.text_input('Digite o número WhatsApp (com código do país, ex: 5582999999999)')
