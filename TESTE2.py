@@ -11,8 +11,12 @@ titulo = st.title("""
 PORTIFÓLIO DE TRABALHO E ANÁLISE DE DADOS
 Formado em Administração de Empresas pela faculdade Pitágoras e Pós graduado em Ciência e Analise dados pela faculdade Estacio.
 Projeto desenvolvido em linguagem 100% Python com Streamlit.
+
+
 "Quanto mais profundo e sólidos forem os motivos básicos de uma pessoa, 
 maior será a certeza do sucesso de sua empreitada" Lucas 6:48.
+
+
 """)
 
 # Incluir CSS para estilizar o menu de navegação
