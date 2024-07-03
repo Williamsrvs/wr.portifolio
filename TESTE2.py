@@ -13,7 +13,8 @@ st.markdown(
         <a href="https://www.instagram.com/williams_rvs85" target="_blank" style="margin-right: 20px;">
             <img src="instagram.png" width="40" height="40">
         </a>
-        <a href="https://www.linkedin.com/in/williams-rodrigues" target="_blank">
+        <a href="https://www.linkedin.com/in/Williams (Williams Rodrigues) Rodrigues
+" target="_blank">
             <img src="linkedin.png" width="40" height="40">
         </a>
     </div>
