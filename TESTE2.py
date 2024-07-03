@@ -2,20 +2,33 @@ import streamlit as st
 from datetime import datetime
 from babel.dates import format_date
 import pandas as pd
+import base64
 
 # Incluir a logo acima do menu de navegação lateral
 st.image("baner.png", use_column_width=True)
 
-# Adicionar ícones de redes sociais
+# Função para converter imagem para base64
+def get_base64_image(image_path):
+    with open(image_path, "rb") as img_file:
+        return base64.b64encode(img_file.read()).decode()
+
+# Caminhos das imagens
+instagram_image_path = "static/instagram.png"
+linkedin_image_path = "static/linkedin.png"
+
+# Converter imagens para base64
+instagram_base64 = get_base64_image(instagram_image_path)
+linkedin_base64 = get_base64_image(linkedin_image_path)
+
+# HTML com imagens base64
 st.markdown(
-    """
+    f"""
     <div style="display: flex; justify-content: center; align-items: center; margin-bottom: 20px;">
         <a href="https://www.instagram.com/williams_rvs85" target="_blank" style="margin-right: 20px;">
-            <img src="instagram.png" width="40" height="40">
+            <img src="data:image/png;base64,{instagram_base64}" width="40" height="40">
         </a>
-        <a href="https://www.linkedin.com/in/williams-rodrigues-9b350a6a
-" target="_blank">
-            <img src="linkedin.png" width="40" height="40">
+        <a href="https://www.linkedin.com/in/williams-rodrigues-9b350a6a" target="_blank">
+            <img src="data:image/png;base64,{linkedin_base64}" width="40" height="40">
         </a>
     </div>
     """,
