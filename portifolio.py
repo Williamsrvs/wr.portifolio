@@ -55,7 +55,7 @@ st.sidebar.title('Menu de Navegação')
 # Menu PBIX
 pagina = st.sidebar.selectbox(
     'Projetos Com Power BI:',
-    ['Selecione uma opção','_____Power BI______','Página Principal', 'Análise Roteirização', 'Análise Combustível',
+    ['Selecione uma opção','_____Power BI______','Apresentação', 'Análise Roteirização', 'Análise Combustível',
      'Análise Financeira - Manutenção','______Python_______','Analise Dados','______Microsoft Excel_______','Aulas e Consultoria','Analise Dados e Dashboards','______Microsoft Access_______','Fale Conosco']
 )
 
@@ -73,7 +73,7 @@ roteirizacao = "https://app.powerbi.com/view?r=eyJrIjoiZGYyYzcwMDYtYzZmZC00YjlhL
 Url_Form_contato = "https://forms.gle/KxkxER6rRhgAmmxMA"
 combustivel = "https://app.powerbi.com/view?r=eyJrIjoiNjE2ZTRlMTItYTJiYS00MmI3LWJjYzktMjdjMjA0NDlhNmI5IiwidCI6ImY1OGYxNjE2LWZkYWEtNGRhZS1hN2ZjLTc1ODI5YzkxOWE2YSJ9"
 
-if pagina == 'Página Principal':
+if pagina == 'Apresentação':
     st.markdown("""
     ## Bem-vindo (a) à minha página de trabalhos produzidos em Power BI, Python, Microsoft Access e Microsoft Excel
     
