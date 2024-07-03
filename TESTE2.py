@@ -7,6 +7,23 @@ import base64
 # Incluir a logo acima do menu de navegação lateral
 st.image("baner.png", use_column_width=True)
 
+# Adicionar ícones de redes sociais
+st.markdown(
+    """
+    <div style="display: flex; justify-content: center; align-items: center; margin-bottom: 20px;">
+        <a href="https://www.instagram.com/williams_rvs85" target="_blank" style="margin-right: 20px;">
+            <img src="instagram.png" width="40" height="40">
+        </a>
+        <a href="https://www.linkedin.com/in/williams-rodrigues-9b350a6a
+" target="_blank">
+            <img src="linkedin.png" width="40" height="40">
+        </a>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
+
+
 # Função para converter imagem para base64
 def get_base64_image(image_path):
     with open(image_path, "rb") as img_file:
