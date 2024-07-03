@@ -57,7 +57,7 @@ st.sidebar.title('Menu de Navegação')
 
 # Menu PBIX
 pagina = st.sidebar.selectbox(
-    'Projetos Com Power BI:',
+    'Conheça mais sobre meus serviços:',
     ['Selecione uma opção','_____Power BI______','Apresentação', 'Análise Roteirização', 'Análise Combustível',
      'Análise Financeira - Manutenção','______Python_______','Analise Dados','______Microsoft Excel_______','Aulas e Consultoria','Analise Dados e Dashboards','______Microsoft Access_______','Fale Conosco']
 )
