@@ -2,7 +2,6 @@ import streamlit as st
 from datetime import datetime
 from babel.dates import format_date
 import pandas as pd
-import base64
 
 # Incluir a logo acima do menu de navegação lateral
 st.image("baner.png", use_column_width=True)
