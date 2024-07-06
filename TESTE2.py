@@ -28,8 +28,11 @@ st.sidebar.title('Menu de Navegação')
 # Menu PBIX
 pagina = st.sidebar.selectbox(
     'Conheça mais sobre meus serviços:',
-    ['Selecione uma opção','_____Power BI______','Apresentação', 'Análise Roteirização', 'Análise Combustível',
-     'Análise Financeira - Manutenção','Fale Conosco']
+    ['Selecione uma opção','_____Power BI______','Apresentação', 
+     'Análise Roteirização',
+     'Análise Combustível',
+     'Análise Financeira - Manutenção',
+     'Fale Conosco']
 )
 
 # Campo de texto para entrada do número de WhatsApp
