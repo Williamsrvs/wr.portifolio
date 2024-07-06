@@ -29,7 +29,7 @@ st.sidebar.title('Menu de Navegação')
 pagina = st.sidebar.selectbox(
     'Conheça mais sobre meus serviços:',
     ['Selecione uma opção','_____Power BI______','Apresentação', 'Análise Roteirização', 'Análise Combustível',
-     'Análise Financeira - Manutenção','______Python_______','Analise Dados','______Microsoft Excel_______','Aulas e Consultoria','Analise Dados e Dashboards','______Microsoft Access_______','Fale Conosco']
+     'Análise Financeira - Manutenção','Fale Conosco']
 )
 
 # Campo de texto para entrada do número de WhatsApp
@@ -71,6 +71,7 @@ elif pagina == 'Análise Roteirização':
 
 elif pagina == 'Análise Combustível':
     st.title('Mapeamento e Análise de Consumo de Combustíveis')
+    st.markdown('Este material envolve diversas área de gestão, incluíndo: Vendas, Fianceiro,Gestão, Combustível e analise de clientes')
     st.markdown(f'<iframe width="800" height="600" src="{combustivel}" frameborder="0" allowfullscreen></iframe>', unsafe_allow_html=True)
 
 elif pagina == 'Análise Financeira - Manutenção':
@@ -79,8 +80,7 @@ elif pagina == 'Análise Financeira - Manutenção':
 elif pagina == 'Analise Dados':
     st.title('Análise de Dados')
     st.title('ESTAMOS EM MANUTENÇÃO')
-    
-    
+        
 elif pagina == 'Fale Conosco':
     st.title('Saiba mais sobre nossos serviços ou solicite uma proposta agora mesmo')
     st.markdown(f'<iframe width="800" height="600" src="{Url_Form_contato}" frameborder="0" allowfullscreen></iframe>', unsafe_allow_html=True)
@@ -94,3 +94,4 @@ st.link_button('Instagram','https://www.instagram.com/williams_rvs85')
 link_instagram=('https://www.instagram.com/williams_rvs85') 
 link_linkedin=('https://www.linkedin.com/in/williams-rodrigues-9b350a6a')
 link_whatsapp=('https://wa.me/5582988639394')
+
