@@ -3,27 +3,11 @@ from datetime import datetime
 from babel.dates import format_date
 import pandas as pd
 
-
 # Incluir a logo acima do menu de navegação lateral
 st.image("baner.png", use_column_width=True)
 
-# Adicionar ícones de redes sociais
-st.markdown(
-    """
-    <div style="display: flex; justify-content: center; align-items: center; margin-bottom: 20px;">
-        <a href="https://www.instagram.com/williams_rvs85" target="_blank" style="margin-right: 20px;">
-            <img src="instagram.png" width="40" height="40">
-        </a>
-        <a href="https://www.linkedin.com/in/williams-rodrigues-9b350a6a
-" target="_blank">
-            <img src="linkedin.png" width="40" height="40">
-        </a>
-    </div>
-    """,
-    unsafe_allow_html=True
-)
-
-
+# Imagens redes sociais
+ 
 # Título streamlit
 titulo = st.title("""
 PORTIFÓLIO DE TRABALHO E ANÁLISE DE DADOS
@@ -34,26 +18,13 @@ Projeto desenvolvido em linguagem 100% Python com Streamlit.
 maior será a certeza do sucesso de sua empreitada" Lucas 6:48.
 """)
 
-# Incluir CSS para estilizar o menu de navegação
-st.markdown(
-    """
-    <style>
-    .sidebar .sidebar-content {
-        background-color: #f0f0f0;  /* Cor de fundo clara */
-    }
-    .sidebar .sidebar-content img {
-        margin-bottom: 20px;  /* Espaço abaixo da imagem */
-    }
-    </style>
-    """,
-    unsafe_allow_html=True
-)
-
 # Adicionar a logo acima do menu de navegação lateral
-st.sidebar.image("logo.png", use_column_width=True)  # Substitua "logo.png" pelo caminho da sua imagem
+st.sidebar.image("new_logo.png", use_column_width=True)  # Substitua "logo.png" pelo caminho da sua imagem
 
 # Componentes na barra lateral para navegação
 st.sidebar.title('Menu de Navegação')
+
+
 
 # Menu PBIX
 pagina = st.sidebar.selectbox(
@@ -62,7 +33,6 @@ pagina = st.sidebar.selectbox(
      'Análise Financeira - Manutenção','______Python_______','Analise Dados','______Microsoft Excel_______','Aulas e Consultoria','Analise Dados e Dashboards','______Microsoft Access_______','Fale Conosco']
 )
 
-
 # Campo de texto para entrada do número de WhatsApp
 numero_zap = st.sidebar.text_input('converta um número WhatsApp (com código do país, ex: 5582999999999)')
 
@@ -70,6 +40,7 @@ numero_zap = st.sidebar.text_input('converta um número WhatsApp (com código do
 if numero_zap:
     link_whatsapp = f"https://wa.me/{numero_zap}"
     st.sidebar.markdown(f"[Link gerado com sucesso - Clique aqui]({link_whatsapp})")
+
 
 # Condicional para exibir conteúdo com base na seleção do usuário
 roteirizacao = "https://app.powerbi.com/view?r=eyJrIjoiZGYyYzcwMDYtYzZmZC00YjlhLWJjYzQtYmE4MmMyOTc5MTdmIiwidCI6ImY1OGYxNjE2LWZkYWEtNGRhZS1hN2ZjLTc1ODI5YzkxOWE2YSJ9"
@@ -80,7 +51,7 @@ if pagina == 'Apresentação':
     st.markdown("""
     ## Bem-vindo (a) à minha página de trabalhos produzidos em Power BI, Python, Microsoft Access e Microsoft Excel
     
-    Me chamo Williams Rodrigues, sou pós-graduando em Ciência de Dados e bacharel em administração de empresas. Atualmente, trabalho no setor logístico de planejamento e controle de um dos maiores home centers do país.
+    Me chamo Williams Rodrigues, sou pós-graduando em Ciência de Dados e bacharel em administração de empresas. Atualmente, trabalho no setor logístico.
     
     Sempre tive paixão pela área de tecnologia, onde fiz vários cursos como Web Designer, linguagem CSS6, HTML, Portugol, Python, VBA com Access.
     
@@ -90,7 +61,7 @@ if pagina == 'Apresentação':
     Foi ai que resolvi me matricular no curso de pós graduação em CIÊNCIA E BIG DATA ANALYTICS pela faculdade Estacio e ai fiquei tão fascinado com esta linguagem,
     que comecei a realizar alguns projetos pessoais.
                 
-    Contatos: [WhatsApp](https://wa.me/5582988639394) 
+    Contatos: 082 - 98863-9394
                 
     Email: wr.rodriguesvieira@outlook.com
     """)
@@ -115,3 +86,13 @@ elif pagina == 'Fale Conosco':
     st.title('Saiba mais sobre nossos serviços ou solicite uma proposta agora mesmo')
     st.markdown(f'<iframe width="800" height="600" src="{Url_Form_contato}" frameborder="0" allowfullscreen></iframe>', unsafe_allow_html=True)
 
+
+#Redes Sociais
+st.title('Siga-nos em nossas redes sociais')
+st.link_button('Whatsapp','https://wa.me/5582988639394')
+st.link_button('Linkedin','https://www.linkedin.com/in/williams-rodrigues-9b350a6a')
+st.link_button('Instagram','https://www.instagram.com/williams_rvs85')
+#link de apoio:
+link_instagram=('https://www.instagram.com/williams_rvs85') 
+link_linkedin=('https://www.linkedin.com/in/williams-rodrigues-9b350a6a')
+link_whatsapp=('https://wa.me/5582988639394')
