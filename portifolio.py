@@ -19,7 +19,7 @@ maior será a certeza do sucesso de sua empreitada" Lucas 6:48.
 """)
 
 # Adicionar a logo acima do menu de navegação lateral
-st.sidebar.image("new_logo.png", use_column_width=True)  # Substitua "logo.png" pelo caminho da sua imagem
+st.sidebar.image("LOGO.png", use_column_width=True)  # Substitua "logo.png" pelo caminho da sua imagem
 
 # Componentes na barra lateral para navegação
 st.sidebar.title('Menu de Navegação')
