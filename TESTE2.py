@@ -25,7 +25,6 @@ st.sidebar.image("new_logo.png", use_column_width=True)  # Substitua "logo.png" 
 st.sidebar.title('Menu de Navegação')
 
 
-
 # Menu PBIX
 pagina = st.sidebar.selectbox(
     'Conheça mais sobre meus serviços:',
@@ -85,7 +84,6 @@ elif pagina == 'Analise Dados':
 elif pagina == 'Fale Conosco':
     st.title('Saiba mais sobre nossos serviços ou solicite uma proposta agora mesmo')
     st.markdown(f'<iframe width="800" height="600" src="{Url_Form_contato}" frameborder="0" allowfullscreen></iframe>', unsafe_allow_html=True)
-
 
 #Redes Sociais
 st.title('Siga-nos em nossas redes sociais')
