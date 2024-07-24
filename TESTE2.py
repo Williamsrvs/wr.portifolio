@@ -71,16 +71,10 @@ elif pagina == 'Análise Roteirização':
     st.markdown(f'<iframe width="800" height="600" src="{roteirizacao}" frameborder="0" allowfullscreen></iframe>', unsafe_allow_html=True)
 
 elif pagina == 'Gestão':
-    st.title('Mapeamento e Análise de Consumo de Combustíveis')
-    st.markdown('Este material envolve diversas área de gestão, incluíndo: Vendas, Fianceiro,Gestão, Combustível e analise de clientes')
-    st.markdown(f'<iframe width="800" height="600" src="{gestao}" frameborder="0" allowfullscreen></iframe>', unsafe_allow_html=True)
+    st.title('Mapeamento e Analise de gestão Completa')
+    st.markdown('Este projeto visa realizar uma analise de indicadores de gesão para acompanhar uma gestão empresarial em diversos setores')
+    st.markdown(f'<iframe width="1080" height="1920" src="{gestao}" frameborder="0" allowfullscreen></iframe>', unsafe_allow_html=True)
 
-elif pagina == 'Análise Financeira - Manutenção':
-    st.title('Análise Financeira - Manutenção')
-
-elif pagina == 'Analise Dados':
-    st.title('Análise de Dados')
-    st.title('ESTAMOS EM MANUTENÇÃO')
         
 elif pagina == 'Fale Conosco':
     st.title('Saiba mais sobre nossos serviços ou solicite uma proposta agora mesmo')
