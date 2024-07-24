@@ -62,7 +62,7 @@ if pagina == 'Apresentação':
     Foi ai que resolvi me matricular no curso de pós graduação em CIÊNCIA E BIG DATA ANALYTICS pela faculdade Estacio e ai fiquei tão fascinado com esta linguagem,
     que comecei a realizar alguns projetos pessoais.
                 
-    Contatos: (082)98863-9394
+    Contatos: (082) 98863-9394
                 
     Email: wr.rodriguesvieira@outlook.com
     """)
