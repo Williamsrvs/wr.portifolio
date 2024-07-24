@@ -29,9 +29,7 @@ st.sidebar.title('Menu de Navegação')
 pagina = st.sidebar.selectbox(
     'Conheça mais sobre meus serviços:',
     ['Selecione uma opção','_____Power BI______','Apresentação', 
-     'Análise Roteirização',
-     'Análise Combustível',
-     'Análise Financeira - Manutenção',
+     'Gestão',
      'Fale Conosco']
 )
 
@@ -47,7 +45,7 @@ if numero_zap:
 # Condicional para exibir conteúdo com base na seleção do usuário
 roteirizacao = "https://app.powerbi.com/view?r=eyJrIjoiZGYyYzcwMDYtYzZmZC00YjlhLWJjYzQtYmE4MmMyOTc5MTdmIiwidCI6ImY1OGYxNjE2LWZkYWEtNGRhZS1hN2ZjLTc1ODI5YzkxOWE2YSJ9"
 Url_Form_contato = "https://forms.gle/KxkxER6rRhgAmmxMA"
-combustivel = "https://app.powerbi.com/view?r=eyJrIjoiODkzNmZmY2ItNTVhYy00ZTEwLWJkYTMtZTJjNjZlNzE1NzgzIiwidCI6ImFiNWQ1NWI3LWU3ZWYtNDM1ZS04NTAwLWJjOWY0NTE1ZTU2MiJ9"
+gestao = "https://app.powerbi.com/reportEmbed?reportId=4d5370c4-4720-44b0-a195-bd194ed3531a&autoAuth=true&ctid=32341a06-b690-4834-94a3-d0b2f7bda7e0"
 
 if pagina == 'Apresentação':
     st.markdown("""
@@ -72,10 +70,10 @@ elif pagina == 'Análise Roteirização':
     st.title('Mapeamento e Análise de Dados do Planejamento de Roteirização')
     st.markdown(f'<iframe width="800" height="600" src="{roteirizacao}" frameborder="0" allowfullscreen></iframe>', unsafe_allow_html=True)
 
-elif pagina == 'Análise Combustível':
+elif pagina == 'Gestão':
     st.title('Mapeamento e Análise de Consumo de Combustíveis')
     st.markdown('Este material envolve diversas área de gestão, incluíndo: Vendas, Fianceiro,Gestão, Combustível e analise de clientes')
-    st.markdown(f'<iframe width="800" height="600" src="{combustivel}" frameborder="0" allowfullscreen></iframe>', unsafe_allow_html=True)
+    st.markdown(f'<iframe width="800" height="600" src="{gestao}" frameborder="0" allowfullscreen></iframe>', unsafe_allow_html=True)
 
 elif pagina == 'Análise Financeira - Manutenção':
     st.title('Análise Financeira - Manutenção')
