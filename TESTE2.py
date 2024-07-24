@@ -73,7 +73,7 @@ elif pagina == 'Análise Roteirização':
 elif pagina == 'Gestão':
     st.title('Mapeamento e Analise de gestão Completa')
     st.markdown('Este projeto visa realizar uma analise de indicadores de gesão para acompanhar uma gestão empresarial em diversos setores')
-    st.markdown(f'<iframe width="1080" height="1920" src="{gestao}" frameborder="0" allowfullscreen></iframe>', unsafe_allow_html=True)
+    st.markdown(f'<iframe width="1000" height="800" src="{gestao}" frameborder="0" allowfullscreen></iframe>', unsafe_allow_html=True)
 
         
 elif pagina == 'Fale Conosco':
